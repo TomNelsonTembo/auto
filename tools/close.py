@@ -1,6 +1,6 @@
 import psutil
 
-app_list = ['chrome', 'slack', 'nautilus' ,'gnome-terminal-server','gnome-system-monitor', 'firefox', 'deja-dup', 'gnome-software', 'blender', 'whatsapp-for-linux']
+app_list = ['chrome', 'slack', 'nautilus' ,'code', 'gnome-terminal-server','gnome-system-monitor', 'firefox', 'deja-dup', 'gnome-software', 'blender', 'whatsapp-for-linux']
 def close_app(app_name):
     running_apps=psutil.process_iter(['pid','name']) #returns names of running processes
     found=False

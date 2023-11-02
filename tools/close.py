@@ -23,22 +23,5 @@ def close_app(app_name):
     else:
         print(app_name+'('+sys_app+')'+' closed')
 
-
-def display_apps():
-    running_apps=psutil.process_iter(['pid','name'])
-    found = False
-
-
-    for app in running_apps:
-        sys_app = app.info.get('name').split('.')[0].lower()
-        pid =app.info.get('pid')
-
-        
-
-        try:
-            print(pid, ' : ', sys_app )
-
-        except: pass
-
 for apps in app_list:
     close_app(apps)

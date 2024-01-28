@@ -1,8 +1,7 @@
 /*
 Copyright © 2023 NAME HERE <EMAIL ADDRESS>
-
 */
-package cmd
+package close
 
 import (
 	"fmt"
@@ -27,6 +26,7 @@ to quickly create a Cobra application.`,
 
 func init() {
 	rootCmd.AddCommand(autoCmd)
+	rootCmd.AddCommand(clo)
 
 	// Here you will define your flags and configuration settings.
 
